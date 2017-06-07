@@ -1,0 +1,22 @@
+## Ignore Mac OS Stuff
+.DS_Store
+.AppleDouble
+.LSOverride
+
+
+## Node Modules
+node_modules
+
+
+## Optional npm cache directory
+.npm
+
+
+## Logs
+logs
+*.log
+npm-debug.log*
+
+
+## Build
+build
