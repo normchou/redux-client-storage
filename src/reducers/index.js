@@ -13,7 +13,7 @@ function buildInitialState(...items) {
 }
 
 export function buildClientStateReducer(...items) {
-  initialState = buildInitialState(items);
+  initialState = buildInitialState(...items);
 }
 
 export function getClientState(state = initialState, action = {}) {

@@ -15,11 +15,11 @@ export function setStorageItem(item, value) {
  * @param  {String} items Storage Keys
  */
 export function getStorageItems(...items) {
-  if (isUndefined(items[0][0])) {
+  if (items.length < 0) {
     return {};
   }
 
-  return reduce(items[0], (acc, item) => merge(acc, { [item]: store.get(item) }), {});
+  return reduce(items, (acc, item) => merge(acc, { [item]: store.get(item) }), {});
 }
 
 /**
